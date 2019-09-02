@@ -1,88 +1,81 @@
-<div class="container mt-5">
-    <h1 class="text-center" style="font-family: 'Manjari', sans-serif;"> ¡Bienvenido a Senagram! </h1>
-    <div class="row">
-        <div class="col-8 mt-5">
-            <form class="needs-validation" novalidate>
-                <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <label for="validationTooltip01">Primer nombre:</label>
-                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Nombres" value=""
-                            required>
-                        <div class="valid-tooltip">
-                            Se ve bien!
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="validationTooltip01">Segundo nombre:</label>
-                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Nombres" value=""
-                            required>
-                        <div class="valid-tooltip">
-                            Se ve bien!
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <label for="validationTooltip02">Primer apellido:</label>
-                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Apellidos"
-                            value="" required>
-                        <div class="valid-tooltip">
-                            Se ve bien!
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="validationTooltip02">Segundo apellido:</label>
-                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Apellidos"
-                            value="" required>
-                        <div class="valid-tooltip">
-                            Se ve bien!
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label for="validationTooltipUsername">Correo electrónico</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                        </div>
-                        <input type="email" class="form-control" id="validationTooltipUsername" placeholder="Username"
-                            aria-describedby="validationTooltipUsernamePrepend" required>
-                        <div class="invalid-tooltip">
-                            Por favor escribe un correo electrónico válido.
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationTooltip03">City</label>
-                        <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
-                        <div class="invalid-tooltip">
-                            Please provide a valid city.
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationTooltip04">State</label>
-                        <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
-                        <div class="invalid-tooltip">
-                            Please provide a valid state.
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationTooltip05">Zip</label>
-                        <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
-                        <div class="invalid-tooltip">
-                            Please provide a valid zip.
-                        </div>
-                    </div>
-                </div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
-            </form>
+<h1 class="text-center mt-3" style="font-family: 'Manjari', sans-serif;"> ¡Bienvenido a Senagram! </h1>
+<h4 class=" text-muted ml-5 mt-3"> ¡Regístrate y comienza a navegar! </h4>
+<p class="ml-5">Llena estos datos y listo.</p>
+<div class="col-7">
+    <form class="form1">
+        <div class="row">
+            <div class="col">
+                <label for="formGroupExampleInput">Primer nombre:</label>
+                <input type="text" class="form-control" placeholder="Primer nombre">
+            </div>
+            <div class="col">
+                <label for="formGroupExampleInput1">Segundo nombre:</label>
+                <input type="text" class="form-control" placeholder="Segundo nombre">
+            </div>
         </div>
-        <div class="col-4">
-            gh
+        <div class="row mt-3">
+            <div class="col">
+                <label for="formGroupExampleInput">Primer apellido:</label>
+                <input type="text" class="form-control" placeholder="Primer apellido">
+            </div>
+            <div class="col">
+                <label for="formGroupExampleInput1">Segundo apellido:</label>
+                <input type="text" class="form-control" placeholder="Segundo apellido">
+            </div>
         </div>
-    </div>
+        <div class="row mt-3">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Correo Electrónico:</label>
+            <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputPassword3">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <label for="inputPassword5" class="col-sm-3">Contraseña nueva:</label>
+            <input type="password" id="inputPassword5" class="form-control col-sm-6">
+            <small id="passwordHelpBlock" class="form-text text-muted col-sm-9">
+                Tu contraseña debe tener de a 8-20 carácteres de largo con letras y números, y no debe contener
+                espacios,
+                o carácteres especiales.
+            </small>
+        </div>
+            <br>
+            <div>
+            <label for="formGroupExampleInput">Fecha de nacimiento:</label>
+            <select class="custom-select custom-select-sm col-sm-2 ml-3 mr-3">
+                <option selected>Día</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="custom-select custom-select-sm col-sm-2 mr-3">
+                <option selected>Mes</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="custom-select custom-select-sm col-sm-2">
+                <option selected>Año</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                </select>
+           </div>
+           <label for="formGroupExampleInput">Género:</label>
+           <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Hombre</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio2">Mujer</label>
+          </div>
+          <small class="form-text text-muted col-sm-9">
+           Al darle Aceptar, aceptas los términos y condiciones de privacidad de <b>Senagram.</b>
+        </small>
+        <a class="btn btn-outline-danger mt-3"> Aceptar</a>
+    </form>
 </div>
+
 
 <footer class="bg-light" style="font-family: 'Gayathri', sans-serif;">
     <div class="row">
@@ -110,6 +103,9 @@
 </footer>
 
 <!-- 
+    fuentes:
         font-family: 'Manjari', sans-serif;
-    font-family: 'Gayathri', sans-serif;
+        font-family: 'Gayathri', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
      -->
