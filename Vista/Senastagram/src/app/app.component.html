@@ -1,10 +1,22 @@
-<nav class="navbar navbar-light" style="background-color: #CE1C00">
+<nav class="navbar navbar-light shadow rounded" style="background-color: rgba(206, 27, 0, 0.726)" *ngIf="!usuario">
   <a class="navbar-brand" href="#">
-  <img src="/assets/img/icono-blanco.png" width="40" height="40" class="d-inline-block align-middle" alt="">
+  <img src="/assets/img/camara-icono-blanco.png" width="40" height="40" class="d-inline-block align-middle" alt="">
     <span class="d-inline-block align-middle ml-2" style="font-family: 'Kaushan Script', cursive; font-size: 40px; color: white"> Senagram</span>
   </a>
-  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Iniciar sesión</button>
+  <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</button>
 </nav>
+
+<nav class="nav justify-content-center bg-light sticky-top shadow-sm">
+  <li class="nav-item">
+    <a class="nav-link active ml-1" href="#">
+      <img src="/assets/img/camara-color.png" alt="" width="40" height="40">
+    </a>
+  </li>
+  <li class="nav-item">
+    <h2 class="mt-1" style="font-family: 'Kaushan Script', cursive; font-size: 40px; color: rgb(214, 19, 19)"> Senagram</h2>
+  </li>
+</nav>
+
 
 <router-outlet></router-outlet>
 
