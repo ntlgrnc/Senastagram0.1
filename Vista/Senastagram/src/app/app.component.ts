@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Senagram';
 
-  public usuario = true;
+  public usuario = false;
 }
