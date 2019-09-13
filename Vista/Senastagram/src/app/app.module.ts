@@ -17,9 +17,10 @@ import { PerfilComponent } from './componentes/perfil/perfil.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [InicioComponent, AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

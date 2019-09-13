@@ -21,28 +21,31 @@
         <span class="img-modal"><i class="far fa-user-circle fa-5x" style="color: white"></i></span>
         <h4 class="text-center" style="color: white"> Iniciar sesión</h4>
         <h5 class="small" style="color: white">Correo electrónico:</h5>
+        <form (ngSubmit)="onInicio()" #formInicio="ngForm">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="far fa-envelope"></i></div>
           </div>
-          <input type="email" class="form-control-plaintext" id="inlineFormInputGroupUsername">
+          <input type="email" class="form-control-plaintext" [(ngModel)]="correoL" id="correoL" name="correo">
         </div>
         <h5 class="small" style="color: white">Contraseña:</h5>
         <div class="input-group mt-3 mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text"><i class="fas fa-key"></i></div>
             </div>
-            <input type="password" class="form-control-plaintext" id="inlineFormInputGroupUsername">
+            <input type="password" class="form-control-plaintext" [(ngModel)]="claveL" id="claveL" name="clave">
           </div>
           <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
               <label class="custom-control-label" for="customControlAutosizing"  style="color: white">Recuérdame</label>
               <a href="#" class="text-decoration-none float-right" style="color: white">Olvidé mi contraseña</a>
             </div>
+          
             <div class="float-right mt-4">
-            <button type="button" class="btn btn-light  mr-3">Iniciar</button>
+            <button class="btn btn-light mr-3">Iniciar</button>
             <button type="button" class="btn btn-outline-light hvr-uncerline-from-center" data-dismiss="modal">Cancelar</button>
           </div>
+        </form>
         </div>
   
 </div>
