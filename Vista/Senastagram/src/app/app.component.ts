@@ -1,33 +1,33 @@
-import {Component, ViewChild, OnInit} from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
+
 @Component({
-  selector: 'component',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 
 export class AppComponent implements OnInit {
-
   title = 'Senagram';
 
   public inicio: any;
 
   public usuario = false;
 
-  @ViewChild ('formInicio' , {static:true}) formInicio: NgForm;
+  @ViewChild('formInicio', { static: true }) formInicio: NgForm;
 
-  constructor(){
-    this.inicio ={
+  constructor() {
+    this.inicio = {
       correoL: '',
       claveL: ''
     }
   }
 
-  ngOnInit(){
+  ngOnInit() {
   }
 
-  onInicio(){
+  onInicio() {
     this.inicio.correoL = this.formInicio.value.correoL;
     this.inicio.claveL = this.formInicio.value.claveL;
 
