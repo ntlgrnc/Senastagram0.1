@@ -55,17 +55,27 @@
 
 <!--  Vista usuario iniciado -->
 
-<nav class="nav justify-content-center sticky-bottom shadow-sm" style="background: #FFFFFF" *ngIf="usuario">
+<nav class="nav justify-content-center sticky-top shadow-sm" style="background: #FFFFFF" *ngIf="usuario">
   <li class="nav-item">
-    <a class="nav-link active ml-1" href="#">
-      <img src="/assets/img/camara-color.png" alt="" width="40" height="40">
+    <a class="nav-link active" href="#">
+      <!-- <img src="/assets/img/camara-color.png" alt="" width="40" height="40"> -->
     </a>
   </li>
   <li class="nav-item">
-    <h2 class="mt-1" style="font-family: 'Lobster', cursive; font-size: 40px; color: #CE1C00"> Senagram</h2>
+    <h2 class="mt-1" style="font-family: 'Lobster', cursive; font-size: 40px; color: #5F5554"> Senagram</h2>
   </li>
   <li class="nav-item boton">
-    <button class="btn btn-outline-danger"> <i class="fas fa-user-cog"></i>botton </button>
+   
+    <div class="btn-group">
+      <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="far fa-user fa-lg"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" type="button">Something else here</button>
+      </div>
+    </div>
   </li>
 </nav>
 
