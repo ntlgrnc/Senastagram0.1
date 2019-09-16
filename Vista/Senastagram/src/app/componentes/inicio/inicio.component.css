@@ -1,0 +1,17 @@
+.form1{
+    background: rgba(41, 41, 41, 0.048);
+    padding: 10px;
+    font-family: 'Gayathri', sans-serif;
+    box-shadow: 2px 2px 20px 5px #4140400e;
+    margin-bottom: 50px;
+  }
+  
+  .divform{
+    border: 2px black;
+  }
+
+  .boton{
+      position: absolute;
+      left: 760px;
+      bottom: 60px;
+  }
