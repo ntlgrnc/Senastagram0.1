@@ -8,27 +8,27 @@
     data-target="#exampleModal"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</button>
 </nav>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade shadow-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content" style="background: rgb(173, 66, 66); font-family: 'Gayathri', sans-serif;">
+    <div class="modal-content" style="background: rgba(238, 233, 233, 0.904); font-family: 'Gayathri', sans-serif;">
       <div class="float-right mr-2 mt-2">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"><i class="far fa-times-circle" style="color: white"></i></span>
         </button>
       </div>
       <div class="modal-body">
-        <span class="img-modal mb-3"><i class="far fa-user-circle fa-5x" style="color: white"></i></span>
-        <h4 class="text-center" style="color: white"> Iniciar sesión</h4>
+        <span class="img-modal mb-3"> <img src="/assets/img/camara-color.png" alt="icono" width="70" height="70"></span>
+        <h4 class="text-center"> Iniciar sesión</h4>
         <form (ngSubmit)="onInicio()" #formInicio="ngForm" class="formInicio">
-            <h5 class="small" style="color: white">Correo electrónico:</h5>
+            <h5 class="small">Correo electrónico:</h5>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="far fa-envelope"></i></div>
           </div>
           <input type="email" class="form-control-plaintext" [(ngModel)]="correoL" id="correoL" name="correoL">
         </div>
-        <h5 class="small" style="color: white">Contraseña:</h5>
+        <h5 class="small">Contraseña:</h5>
         <div class="input-group mt-3 mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text"><i class="fas fa-key"></i></div>
@@ -37,13 +37,13 @@
           </div>
           <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-              <label class="custom-control-label" for="customControlAutosizing"  style="color: white">Recuérdame</label>
-              <a href="#" class="text-decoration-none float-right" style="color: white">Olvidé mi contraseña</a>
+              <label class="custom-control-label" for="customControlAutosizing">Recuérdame</label>
+              <a href="#" class="text-decoration-none float-right" style="color: #D76C5C">Olvidé mi contraseña</a>
             </div>
           
             <div class="float-right mt-4">
-            <button class="btn btn-light mr-3">Iniciar</button>
-            <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cancelar</button>
+            <button class="btn btn-danger mr-3">Iniciar</button>
+            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
           </div>
         </form>
         </div>

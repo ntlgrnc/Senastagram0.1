@@ -25,7 +25,8 @@ export class InicioComponent implements OnInit {
       clave: '',
       dia: '',
       mes: '',
-      ano: ''
+      ano: '',
+      genero: ''
     }
 
     this.dia = [
@@ -61,10 +62,11 @@ export class InicioComponent implements OnInit {
     this.registro.dia = this.formRegistro.value.dia;
     this.registro.mes = this.formRegistro.value.mes;
     this.registro.ano = this.formRegistro.value.ano;
+    this.registro.genero = this.formRegistro.value.genero;
 
     console.log(this.registro.nombre1 + ' ' + this.registro.nombre2 + ' ' + this.registro.apellido1 + ' ' +
-      this.registro.apellido2 + ' ' + this.registro.correo + ' ' + this.registro.clave + ' ' + this.registro.dia + 
-      ' ' + this.registro.mes + ' ' + this.registro.ano );
+      this.registro.apellido2 + ' ' + this.registro.correo + ' ' + this.registro.clave + ' Dia: ' + this.registro.dia + 
+      ' Mes: ' + this.registro.mes + ' Año: ' + this.registro.ano + ' Genero: ' + this.registro.genero );
   }
 
 }
