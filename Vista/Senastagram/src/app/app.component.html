@@ -18,10 +18,10 @@
         </button>
       </div>
       <div class="modal-body">
-        <span class="img-modal"><i class="far fa-user-circle fa-5x" style="color: white"></i></span>
+        <span class="img-modal mb-3"><i class="far fa-user-circle fa-5x" style="color: white"></i></span>
         <h4 class="text-center" style="color: white"> Iniciar sesión</h4>
-        <h5 class="small" style="color: white">Correo electrónico:</h5>
-        <form (ngSubmit)="onInicio()" #formInicio="ngForm">
+        <form (ngSubmit)="onInicio()" #formInicio="ngForm" class="formInicio">
+            <h5 class="small" style="color: white">Correo electrónico:</h5>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="far fa-envelope"></i></div>
@@ -43,7 +43,7 @@
           
             <div class="float-right mt-4">
             <button class="btn btn-light mr-3">Iniciar</button>
-            <button type="button" class="btn btn-outline-light hvr-uncerline-from-center" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cancelar</button>
           </div>
         </form>
         </div>
@@ -62,18 +62,20 @@
     </a>
   </li>
   <li class="nav-item">
-    <h2 class="mt-1" style="font-family: 'Lobster', cursive; font-size: 40px; color: #5F5554"> Senagram</h2>
+    <h2 class="mt-1" style="font-family: 'Lobster', cursive; font-size: 40px; color: #CE1C00"> Senagram</h2>
   </li>
   <li class="nav-item boton">
    
     <div class="btn-group">
-      <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="dropdown-toggle mt-2" style="color: #CE1C00" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="far fa-user fa-lg"></i>
       </a>
       <div class="dropdown-menu dropdown-menu-right">
-        <button class="dropdown-item" type="button">Action</button>
-        <button class="dropdown-item" type="button">Another action</button>
-        <button class="dropdown-item" type="button">Something else here</button>
+        <button class="dropdown-item" type="button">Mi perfil</button>
+        <div class="dropdown-divider"></div>
+        <button class="dropdown-item" type="button"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</button>
+        <div class="dropdown-divider"></div>
+        <button class="dropdown-item" type="button"><i class="far fa-question-circle"></i> Ayuda</button>
       </div>
     </div>
   </li>

@@ -3,3 +3,29 @@
     right: 30px;
     margin-top: 10px;
 }
+
+.img-modal{
+    position: relative;
+    left: 200px;
+    bottom: 10px;
+}
+
+.input-group-text{
+    color: #ffffff;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.form-control-plaintext{
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 5px 20px;
+}
+
+.form-control-plaintext:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.219);
+}
+
+.formInicio{
+    padding: 20px;
+}
+
