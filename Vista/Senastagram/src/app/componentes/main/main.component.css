@@ -6,3 +6,32 @@
     left: 190px;
     padding: 10px;
 }
+
+
+.icono1{
+    position: absolute;
+    left: 400px;
+    color: #CE1C00;
+}
+
+.icono2{
+    position: absolute;
+    left: 200px;
+    color: #CE1C00;
+}
+
+.icono3{
+    color: #CE1C00;
+}
+
+.pie{
+    background: rgba(255, 255, 255, 0.658);
+}
+
+.card{
+    border: 1px solid #CE1C00;
+}
+
+.card-header{
+    border-bottom: 1px solid #CE1C00;
+}
