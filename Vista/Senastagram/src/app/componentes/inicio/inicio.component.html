@@ -44,24 +44,24 @@
             <label for="dia">Fecha de nacimiento: </label>
             <select class="custom-select custom-select-sm col-sm-2 ml-3 mr-3" id="dia">
                 <option value=" ">Día</option>
-                <option *ngFor="let dia of dia" [value]="dia"> {{ dia }} </option>
+                <option *ngFor="let dia of dia" [value]="dia" [(ngModel)]="dia" name="dia" id="dia"> {{ dia }} </option>
             </select>
             <select class="custom-select custom-select-sm col-sm-2 mr-3" id="mes">
                     <option value=" ">Mes</option>
-                    <option *ngFor="let mes of mes" [value]="mes"> {{ mes }} </option>
+                    <option *ngFor="let mes of mes" [value]="mes" [(ngModel)]="mes" name="mes" id="mes"> {{ mes }} </option>
             </select>
             <select class="custom-select custom-select-sm col-sm-2" id="ano">
                     <option value=" ">Año</option>
-                    <option *ngFor="let ano of ano" [value]="ano"> {{ ano }} </option>
+                    <option *ngFor="let ano of ano" [value]="ano" [(ngModel)]="ano" name="ano" id="ano"> {{ ano }} </option>
                 </select>
            </div>
            <label for="formGroupExampleInput">Género:</label>
            <div class="custom-control custom-radio">
-            <input type="radio" id="radioHombre" class="custom-control-input" name="genero">
+            <input type="radio" id="radioHombre" class="custom-control-input" [(ngModel)]="genero" id="hombre" name="genero">
             <label class="custom-control-label" for="radioHombre">Hombre</label>
           </div>
           <div class="custom-control custom-radio">
-            <input type="radio" id="radioMujer" class="custom-control-input" name="genero">
+            <input type="radio" id="radioMujer" class="custom-control-input" [(ngModel)]="genero" id="mujer" name="genero">
             <label class="custom-control-label" for="radioMujer">Mujer</label>
           </div>
           <small class="form-text text-muted col-sm-9">

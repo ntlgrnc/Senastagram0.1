@@ -15,3 +15,15 @@
       left: 760px;
       bottom: 60px;
   }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #CE1C00;
+    background-color: #CE1C00;
+  }
+
+ .boton{
+    position: absolute;
+    left: 650px;
+    margin-top: 10px;
+} 

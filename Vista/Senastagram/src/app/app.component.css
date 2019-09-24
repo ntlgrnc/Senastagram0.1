@@ -1,8 +1,3 @@
-.boton{
-    position: absolute;
-    right: 30px;
-    margin-top: 10px;
-}
 
 .img-modal{
     position: relative;
@@ -11,21 +6,32 @@
 }
 
 .input-group-text{
-    color: #ffffff;
-    border-bottom: 1px solid #FFFFFF;
+    color: #D76C5C;
+    border-bottom: 1px solid #D76C5C;
+    background: transparent;
 }
 
 .form-control-plaintext{
-    border-bottom: 1px solid #FFFFFF;
-    color: #FFFFFF;
+    border-bottom: 1px solid #D76C5C;
+    color: #D76C5C;
     padding: 5px 20px;
 }
 
 .form-control-plaintext:focus{
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.219);
+    box-shadow: none;
 }
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #D76C5C;
+    background-color: #D76C5C;
+  }
 
 .formInicio{
     padding: 20px;
+}
+
+.modal{
+    color: #CE1C00;
 }
 
