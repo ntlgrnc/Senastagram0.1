@@ -6,3 +6,11 @@
     left: 190px;
     padding: 10px;
 }
+
+.card{
+    border: 1px solid #CE1C00;
+}
+
+.card-header{
+    border-bottom: 1px solid #CE1C00;
+}
