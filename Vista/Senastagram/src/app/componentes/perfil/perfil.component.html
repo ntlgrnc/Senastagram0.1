@@ -34,7 +34,8 @@
                     <a class="nav-link text-danger" href="#">Seguidos <i class="fas fa-user-friends"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-danger" href="#">Agregar foto <i class="far fa-image"></i></a>
+                    <a class="nav-link text-danger" href="#" data-toggle="modal"
+                        data-target="#exampleModalCenter">Agregar foto <i class="far fa-image"></i></a>
                 </li>
             </ul>
         </div>
@@ -76,6 +77,46 @@
                     <p class="card-text">*Descripcion*</p>
                     <input class="form-control-plaintext mt-3" type="text" placeholder="Deja tu comentario aquí">
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ventana modal para agregar imagenes -->
+<div class="modal fade  bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="/assets/img/camara-color.png" class="logomodal">
+                <h5 class="modal-title ml-2" id="exampleModalCenterTitle">Agregar nueva foto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-6 float-left">
+                    <form>
+                        <div class="form-group">
+                            <label>Seleccionar foto:</label>
+                            <div class="custom-file">
+                                <input type="file" (change)="UpdateControls($event)" class="custom-file-input">
+                                <label class="custom-file-label" data-browse="Elegir foto">{{FileName}}</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Agregar pie de foto:</label>
+                            <textarea rows="4" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 float-left">
+                    <img [src]="ImageURL" class="mx-auto d-block" height="250" width="250">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger"><i class="fas fa-plus"></i>Agregar</button>
             </div>
         </div>
     </div>

@@ -15,6 +15,8 @@ export class AppComponent implements OnInit {
 
   public usuario = true;
 
+  
+
   @ViewChild('formInicio', { static: true }) formInicio: NgForm;
 
   constructor() {

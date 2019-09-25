@@ -21,35 +21,34 @@
         <span class="img-modal mb-3"> <img src="/assets/img/camara-color.png" alt="icono" width="70" height="70"></span>
         <h4 class="text-center"> Iniciar sesión</h4>
         <form (ngSubmit)="onInicio()" #formInicio="ngForm" class="formInicio">
-            <h5 class="small">Correo electrónico:</h5>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <div class="input-group-text"><i class="far fa-envelope"></i></div>
+          <h5 class="small">Correo electrónico:</h5>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="far fa-envelope"></i></div>
+            </div>
+            <input type="email" class="form-control-plaintext" [(ngModel)]="correoL" id="correoL" name="correoL">
           </div>
-          <input type="email" class="form-control-plaintext" [(ngModel)]="correoL" id="correoL" name="correoL">
-        </div>
-        <h5 class="small">Contraseña:</h5>
-        <div class="input-group mt-3 mb-3">
+          <h5 class="small">Contraseña:</h5>
+          <div class="input-group mt-3 mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text"><i class="fas fa-key"></i></div>
             </div>
             <input type="password" class="form-control-plaintext" [(ngModel)]="claveL" id="claveL" name="claveL">
           </div>
           <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-              <label class="custom-control-label" for="customControlAutosizing">Recuérdame</label>
-              <a href="#" class="text-decoration-none float-right" style="color: #D76C5C">Olvidé mi contraseña</a>
-            </div>
-          
-            <div class="float-right mt-4">
+            <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+            <label class="custom-control-label" for="customControlAutosizing">Recuérdame</label>
+            <a href="#" class="text-decoration-none float-right" style="color: #D76C5C">Olvidé mi contraseña</a>
+          </div>
+
+          <div class="float-right mt-4">
             <button class="btn btn-danger mr-3">Iniciar</button>
             <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
           </div>
         </form>
-        </div>
-  
-</div>
-</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -65,9 +64,10 @@
     <h2 class="mt-1" style="font-family: 'Lobster', cursive; font-size: 40px; color: #CE1C00"> Senagram</h2>
   </li>
   <li class="nav-item boton">
-   
+
     <div class="btn-group">
-      <a class="dropdown-toggle mt-2" style="color: #CE1C00" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="dropdown-toggle mt-2" style="color: #CE1C00" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
         <i class="far fa-user fa-lg"></i>
       </a>
       <div class="dropdown-menu dropdown-menu-right">
