@@ -36,12 +36,15 @@ export class PerfilComponent implements OnInit {
       imagen:'',
       Descripcion:''
     }
+    this.ImageURL="/assets/img/fotosPerfil/nophoto.png";
+    this.FileName="Seleccionar imagen"
   }
 
   onSubmit(form:NgForm){
     this.service.postPublicacion(form.value,this.FileToUpload).subscribe(
       res=>{
         this.resetForm(form);
+        this.ngOnInit();
         this.toastr.success("Foto agregada","Senagram")
       },
 
@@ -54,6 +57,20 @@ export class PerfilComponent implements OnInit {
 
   ngOnInit() {
     this.service.getPublicacions();
+  }
+
+  onDelete(id:number){
+    if (confirm("Seguro quieres eliminar la foto?")) {
+      this.service.deletePublicacion(id).subscribe(
+        res=>{
+          this.ngOnInit();
+          this.toastr.warning("Foto eliminada","Senagram")
+        },
+        err=>{
+          this.toastr.error(err.error,"Senagram")
+        }
+      )
+    }
   }
 
 }

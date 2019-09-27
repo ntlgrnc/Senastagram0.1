@@ -36,4 +36,8 @@ export class PublicacionService {
       }
     )
   }
+
+  deletePublicacion(id:number){
+    return this.HttpClient.delete(this.rootURL+"Publicacions/"+id);
+  }
 }
