@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PublicacionService } from 'src/app/shared/publicacion.service';
 import { NgForm } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-perfil',
@@ -9,7 +10,7 @@ import { NgForm } from '@angular/forms';
 })
 export class PerfilComponent implements OnInit {
 
-  constructor(private service:PublicacionService) { }
+  constructor(private service:PublicacionService, private toastr:ToastrService) { }
 
   FileName:string="Seleccionar imagen";
   FileToUpload:File=null;
@@ -28,9 +29,8 @@ export class PerfilComponent implements OnInit {
   }
 
   resetForm(form?:NgForm){
-    if (form!=null) {
-      this.resetForm();
-    }
+    if (form!=null) 
+    form.resetForm()
     this.service.formData={
       IdImagen:0,
       imagen:'',
@@ -42,6 +42,11 @@ export class PerfilComponent implements OnInit {
     this.service.postPublicacion(form.value,this.FileToUpload).subscribe(
       res=>{
         this.resetForm(form);
+        this.toastr.success("Foto agregada","Senagram")
+      },
+
+      err=>{
+        this.toastr.error(err.error,"Senagram")
       }
     )
   }

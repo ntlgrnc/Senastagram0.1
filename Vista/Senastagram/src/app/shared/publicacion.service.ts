@@ -11,7 +11,7 @@ export class PublicacionService {
 
   constructor(private HttpClient:HttpClient) { }
 
-  readonly rootURL="https://localhost:44373/api/"
+  readonly rootURL="https://localhost:5001/api/"
 
   postPublicacion(formData:Publicacion, FileToUpload:File){
     let formToPost = new FormData();
