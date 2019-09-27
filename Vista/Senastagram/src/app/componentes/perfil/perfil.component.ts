@@ -46,12 +46,14 @@ export class PerfilComponent implements OnInit {
       },
 
       err=>{
+        this.resetForm(form);
         this.toastr.error(err.error,"Senagram")
       }
     )
   }
 
   ngOnInit() {
+    this.service.getPublicacions();
   }
 
 }

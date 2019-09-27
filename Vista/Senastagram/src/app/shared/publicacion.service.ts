@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class PublicacionService {
 
   formData:Publicacion;
+  listaPublicacion:Publicacion[];
 
   constructor(private HttpClient:HttpClient) { }
 
@@ -23,6 +24,16 @@ export class PublicacionService {
     formToPost.append("publicacion",requestToPost);
     formToPost.append("imagen",FileToUpload,FileToUpload.name)
 
-    return this.HttpClient.post(this.rootURL+"publicacion",formToPost)
+    return this.HttpClient.post(this.rootURL+"Publicacions",formToPost)
+  }
+
+  getPublicacions(){
+    this.HttpClient.get(this.rootURL+"Publicacions")
+    .toPromise()
+    .then(
+      res=>{
+        this.listaPublicacion=res as Publicacion[];
+      }
+    )
   }
 }
